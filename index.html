@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Japan</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Megrim|Poppins:400,700|Source+Sans+Pro:400,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="section1">
+      <div class="topnav" id="myTopnav">
+        <a href="#home" class="active"><h2>Head.</h2></a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </section>
+    <section class="section2">
+      <div class="text">
+        <div><h1>Japan</h1></div>
+        <div>
+          <p>
+            Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec
+            viverra eleifend lacus, vitae ullamcor.
+          </p>
+        </div>
+      </div>
+      <div>
+        <img src="img/mountain.png" alt="mountain" />
+      </div>
+    </section>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>
