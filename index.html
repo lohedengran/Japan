@@ -9,34 +9,51 @@
       href="https://fonts.googleapis.com/css?family=Megrim|Poppins:400,700|Source+Sans+Pro:400,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
-  <body>
-    <section class="section1">
-      <div class="topnav" id="myTopnav">
-        <a href="#home" class="active"><h2>Head.</h2></a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-    </section>
-    <section class="section2">
-      <div class="text">
-        <div><h1>Japan</h1></div>
-        <div>
-          <p>
-            Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec
-            viverra eleifend lacus, vitae ullamcor.
-          </p>
+  <body class="screen">
+    <main>
+      <section class="section1">
+        <div class="topnav" id="myTopnav">
+          <a href="#home" class="active"><h2>Head.</h2></a>
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
         </div>
-      </div>
-      <div>
-        <img src="img/mountain.png" alt="mountain" />
-      </div>
-    </section>
-
+      </section>
+      <section class="section2">
+        <div class="text">
+          <div><h1>Japan</h1></div>
+          <div>
+            <p>
+              Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec.
+              Donec viverra eleifend lacus, vitae ullamcor.
+            </p>
+          </div>
+        </div>
+        <picture>
+          <source
+            media="(max-width: 400px)"
+            srcset="./img/mountain-mobile.png"
+          />
+          <source
+            media="(max-width: 768px"
+            srcset="./img/mountain-tablet.png"
+          />
+          <source
+            media="(max-width: 1400px)"
+            srcset="./img/mountain-desktop.png"
+          />
+          <img src="img/mountain-desktop.png" alt="mountain" />
+        </picture>
+      </section>
+    </main>
     <script>
       function myFunction() {
         var x = document.getElementById("myTopnav");
