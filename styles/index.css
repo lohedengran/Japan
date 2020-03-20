@@ -17,8 +17,10 @@ h2 {
 }
 
 .topnav a {
-  display: flex;
-  color: #f2f2f2;
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -67,7 +69,7 @@ p {
   line-height: 34px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .topnav a:not(:first-child) {
     display: none;
   }
@@ -75,9 +77,14 @@ p {
   .topnav a.icon {
     float: right;
     display: block;
+    border: 2px solid white;
+    width: 42px;
+    height: 42px;
+    background-color: white;
+    color: black;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .topnav.responsive {
     position: relative;
   }
